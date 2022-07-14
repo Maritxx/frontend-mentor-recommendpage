@@ -28,8 +28,7 @@ h1 {
 	font-size: 0.9375rem;
 	color: var(--heading-primary);
 	font-weight: 700;
-	display: block;
-	padding: 10px 0px;
+	padding-top: 15px;
 }
 
 .review-name__text {
@@ -64,18 +63,22 @@ h1 {
 
 .rating__box {
 	background-color: var(--box-primary);
-	border-radius: 20px;
+	border-radius: 10px;
 	margin-top: 15px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .rating__box img {
-	padding-top: 10px;
-	padding-right: 10px;
+	padding-right: 5px;
 }
 
 .review__box {
 	background-color: var(--heading-primary);
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 35px;
 	margin-top: 15px;
 }
@@ -108,5 +111,59 @@ h1 {
 
 
 /*Media Queries*/
+@media screen and (min-width: 1025px) {
+	.review {
+		max-width: 1200px;
+		text-align: left;
+	}
+
+	.information__holder {
+		display: flex;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.information__text, .information__rating {
+		flex: 0 1 50%;
+	}
+
+	.information__rating {
+		display: flex;
+		flex-direction: column;
+		padding-left: 150px;
+	}
+
+	.rating__box {
+		flex-direction: row;
+		padding: 15px 25px;
+	}
+
+/*Last child of rating__box img needs bigger padding than rest of em*/
+
+	.rating__b {
+		align-self: center;
+	}
+
+	.rating__c {
+		align-self: flex-end;
+	}
+
+	.review__holder {
+		display: flex;
+		margin-right: 35px;
+	}
+
+	.review__b {
+		margin-top: 20px;
+	}
+
+	.review__c {
+		margin-top: 40px;
+	}
+
+	/*Last child of review holder needs no margin*/
+}
 
 
