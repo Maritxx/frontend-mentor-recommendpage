@@ -3,9 +3,9 @@ body {
 	background-color: var(--bg-primary);
 	font-family: var(--main-font);
 	background-image: url("img/bg-pattern-top-mobile.svg"), url("img/bg-pattern-bottom-mobile.svg");
-	background-position: top, bottom left;
+	background-position: top left, bottom left;
     background-repeat: no-repeat, no-repeat;
-    background-size: contain, cover;
+    background-size: contain, contain;
 }
 
 .review {
@@ -21,18 +21,19 @@ body {
 }
 
 
-
 /*Font Styles*/
 h1 {
 	font-size: 2.3rem;
 	font-weight: 700;
 	color: var(--heading-primary);
+	padding-bottom: 20px;
 }
 
 .rating__text {
 	font-size: 0.9375rem;
 	color: var(--heading-primary);
 	font-weight: 700;
+	padding-top: 5px;
 }
 
 .review-name__text {
@@ -89,7 +90,7 @@ h1 {
 }
 
 .review__box:first-child, .rating__box:first-child {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .review__title {
@@ -122,7 +123,8 @@ h1 {
 @media screen and (min-width: 1025px) {
 	body {
 		background-image: url("img/bg-pattern-top-desktop.svg"), url("img/bg-pattern-bottom-desktop.svg");
-		background-size: unset;
+		background-size: 40%, 60%;
+		background-position: top left, bottom right;
 	}
 
 	.review {
@@ -137,7 +139,6 @@ h1 {
 
 	h1 {
 		font-size: 3.5rem;
-		padding-bottom: 20px;
 	}
 
 	.information__text, .information__rating {
@@ -146,6 +147,10 @@ h1 {
 
 	.information__text {
 		padding-right: 100px;
+	}
+
+	.rating__text {
+		padding-top: unset;
 	}
 	
 
