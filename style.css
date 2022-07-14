@@ -93,6 +93,7 @@ h1 {
 .review-title__image img {
 	border-radius: 90px;
 	margin-right: 25px;
+	height: 40px;
 }
 
 
@@ -113,6 +114,7 @@ h1 {
 @media screen and (min-width: 1025px) {
 	.review {
 		max-width: 1200px;
+		padding: 100px 40px;
 	}
 
 	.information__holder {
@@ -132,7 +134,7 @@ h1 {
 	.information__rating {
 		display: flex;
 		flex-direction: column;
-		padding-left: 150px;
+		padding-left: 100px;
 	}
 
 	.rating__box {
@@ -145,7 +147,11 @@ h1 {
 	}
 
 /*Last child of rating__box img needs bigger padding than rest of em*/
-
+	
+	.rating__a {
+		align-self: flex-start;
+	}
+	
 	.rating__b {
 		align-self: center;
 	}
