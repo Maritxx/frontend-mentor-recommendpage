@@ -28,7 +28,6 @@ h1 {
 	font-size: 0.9375rem;
 	color: var(--heading-primary);
 	font-weight: 700;
-	padding-top: 15px;
 }
 
 .review-name__text {
@@ -114,11 +113,11 @@ h1 {
 @media screen and (min-width: 1025px) {
 	.review {
 		max-width: 1200px;
-		text-align: left;
 	}
 
 	.information__holder {
 		display: flex;
+		text-align: left;
 	}
 
 	h1 {
@@ -128,6 +127,7 @@ h1 {
 	.information__text, .information__rating {
 		flex: 0 1 50%;
 	}
+	
 
 	.information__rating {
 		display: flex;
@@ -138,6 +138,10 @@ h1 {
 	.rating__box {
 		flex-direction: row;
 		padding: 15px 25px;
+	}
+
+	.rating__box img {
+		padding-right: 
 	}
 
 /*Last child of rating__box img needs bigger padding than rest of em*/
@@ -152,15 +156,22 @@ h1 {
 
 	.review__holder {
 		display: flex;
+	}
+
+	.review__box {
 		margin-right: 35px;
+		flex: 0 1 33%;
+		display: inline-block;
 	}
 
 	.review__b {
-		margin-top: 20px;
+		margin-top: 35px;
+		margin-bottom: -35px;
 	}
 
 	.review__c {
-		margin-top: 40px;
+		margin-top: 55px;
+		margin-bottom: -55px;
 	}
 
 	/*Last child of review holder needs no margin*/
