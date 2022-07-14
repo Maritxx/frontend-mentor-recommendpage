@@ -8,15 +8,11 @@ body {
 	background-size: cover;
 }
 
-.container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: calc(100vh - 34px);
-}
-
 .review {
-	margin: 100px 25px;
+	margin: 0 auto;
+	max-width: 840px;
+	width: 100%;
+	padding: 100px 25px;
 }
 
 
@@ -31,8 +27,9 @@ h1 {
 .rating__text {
 	font-size: 0.9375rem;
 	color: var(--heading-primary);
-	font-weight: 500;
+	font-weight: 700;
 	display: block;
+	padding: 10px 0px;
 }
 
 .review-name__text {
@@ -67,13 +64,18 @@ h1 {
 
 .rating__box {
 	background-color: var(--box-primary);
-	width: 100%;
-	margin: 0 auto;
+	border-radius: 20px;
 	margin-top: 15px;
+}
+
+.rating__box img {
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .review__box {
 	background-color: var(--heading-primary);
+	border-radius: 20px;
 	padding: 35px;
 	margin-top: 15px;
 }
@@ -88,7 +90,7 @@ h1 {
 
 .review-title__image img {
 	border-radius: 90px;
-	padding-right: 25px;
+	margin-right: 25px;
 }
 
 
