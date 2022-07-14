@@ -13,6 +13,11 @@ body {
 	max-width: 840px;
 	width: 100%;
 	padding: 100px 25px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 31px);
+    flex-direction: column;
 }
 
 
@@ -112,6 +117,10 @@ h1 {
 
 /*Media Queries*/
 @media screen and (min-width: 1025px) {
+	body {
+		background-image: url("bg-pattern-top-desktop.svg"), url("bg-pattern-bottom-desktop.svg");
+	}
+
 	.review {
 		max-width: 1200px;
 		padding: 100px 40px;
